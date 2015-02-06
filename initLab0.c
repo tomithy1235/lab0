@@ -39,30 +39,19 @@ void clearTimer(){
 }
 
 void turnOnLEDs(int led){
+    LATB |= 0xF000;
     if(led == 4){
         LED4 = ON;
-        LED5 = OFF;
-        LED6 = OFF;
-        LED7 = OFF;
     }
     else if (led == 5){
-        LED4 = OFF;
         LED5 = ON;
-        LED6 = OFF;
-        LED7 = OFF;
     }
 
     else if (led == 6){
-        LED4 = OFF;
-        LED5 = OFF;
         LED6 = ON;
-        LED7 = OFF;
     }
 
     else if (led == 7){
-        LED4 = OFF;
-        LED5 = OFF;
-        LED6 = OFF;
         LED7 = ON;
     }
 }
