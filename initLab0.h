@@ -4,7 +4,6 @@
 *
 * Created on December 27, 2014, 1:31 PM
 */
-//why?
 #ifndef INITLAB0_H
 #define	INITLAB0_H
 #define RELEASED 1
