@@ -84,16 +84,14 @@ void _ISR _CNInterrupt(void){
             led = led4;
         
     }
-    move = 1;//if it was set to 0
+    move = 1;//for if it was set to 0
 }
 
-void _ISR _T1Interrupt(void){
-    IFS0bits.T1IF = 0;
+void _ISR _T3Interrupt(void){
+    IFS0bits.T3IF = 0;//flag down
     
     //T2CONbits.TON = 0;//ensure timer is off
-    move = 0;
-    LATB |= 0xF000;
-    /*
+    
     if(led == led4)
         led = led7;
     else if(led == led5)
@@ -102,5 +100,5 @@ void _ISR _T1Interrupt(void){
         led = led5;
     else if(led == led7)
         led = led6;
-     * */
+    move = 0;
 }

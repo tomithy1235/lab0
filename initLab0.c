@@ -4,7 +4,7 @@
 *
 * Created on December 27, 2014, 1:31 PM
 */
-//hello
+
 #include "p24fj64ga002.h"
 #include "initLab0.h"
 #define F_CY 14745600
@@ -26,11 +26,11 @@ void initTimer32bit(){
     long int prVal = (F_CY*2)/256 - 1;
     PR3 = (prVal >> 16); //0x0001
     PR2 = (prVal << 16) >> 16; //0xC1FF
-    T2CONbits.T32 = 1;
-    T2CONbits.TCKPS = 0b11;
-    IEC0bits.T3IE = 1;
-    IFS0bits.T3IF = 0;
-    T2CONbits.TON = 0;
+    T2CONbits.T32 = 1;//32bit mode enabled
+    T2CONbits.TCKPS = 0b11;//prescaler 256
+    IEC0bits.T3IE = 1;//over all enable
+    IFS0bits.T3IF = 0;//flag down
+    T2CONbits.TON = 0;//timer off
 }
 
 void clearTimer(){
