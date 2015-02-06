@@ -1,0 +1,23 @@
+commit a768d424189dcdec1eee070645180b3b3aeeecbb
+Author: Tim <tebinger@email.arizona.edu>
+Date:   Thu Feb 5 19:13:45 2015 -0700
+
+    trial also
+
+commit ff72d8c737619b012b21467387eedce20ddfe726
+Author: Tim <tebinger@email.arizona.edu>
+Date:   Thu Feb 5 19:11:10 2015 -0700
+
+    trial
+
+commit 06140a211b18fdcb0ab730f545d37cbe0938ba35
+Author: Tim <tebinger@email.arizona.edu>
+Date:   Thu Feb 5 18:52:56 2015 -0700
+
+    added the 3 source files
+
+commit 8a76d3b479d1b02a479b4a9f08f6605bc1f6aaaf
+Author: tomithy1235 <tebinger@email.arizona.edu>
+Date:   Thu Feb 5 15:33:02 2015 -0700
+
+    Initial commit
